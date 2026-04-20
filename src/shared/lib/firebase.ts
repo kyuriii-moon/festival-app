@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBn2ka39ABM-UhGkZt5Ew7__2tV2XtnHTI",
@@ -16,3 +17,4 @@ const app = initializeApp(firebaseConfig);
 
 // 데이터베이스(Firestore) 불러오기
 export const db = getFirestore(app);
+export const auth = getAuth(app);

@@ -1,6 +1,6 @@
 // src/app/App.tsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage } from "../pages/home/ui/HomePage";
+import { HomePage } from "@/pages/home";
 // BoothPage, ParkingPage도 import 하세요!
 
 function App() {
