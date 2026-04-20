@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { db } from "../../shared/lib/firebase";
+import { db } from "@/shared/lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 function App() {
