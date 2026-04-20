@@ -1,2 +1,2 @@
 //shared
-export * from "./api/firebase";
+export * from "./lib/firebase";
