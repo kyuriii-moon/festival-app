@@ -1,1 +1,16 @@
+@font-face {
+  font-family: "hakgyoansimB";
+  src: url("@/shared/assets/fonts/HakgyoansimB.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "hakgyoansimR";
+  src: url("@/shared/assets/fonts/HakgyoansimR.otf") format("opentype");
+  font-weight: 400;
+}
+
 @import "tailwindcss";
+
+body {
+  font-family: "hakgyoansimR", sans-serif;
+}
