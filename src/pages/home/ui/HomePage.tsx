@@ -1,4 +1,10 @@
 // src/pages/home/ui/HomePage.tsx
+import {
+  BlogIcon,
+  FacebookIcon,
+  InstaIcon,
+  YoutubeIcon,
+} from "@/shared/assets";
 import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
@@ -7,12 +13,15 @@ export const HomePage = () => {
   return (
     <div className="flex flex-col items-center min-h-screen">
       {/* 헤더 */}
-      <header className="py-6 w-full text-center ">
+      <header className="py-6 w-full text-center border-b border-color:var(--color-foreground)">
         <h1 className="text-2xl font-haBold">
-          <span className="text-[var(--font-red)] webkit-text-stroke">2</span>
-          <span className="text-[var(--font-yellow) webkit-text-stroke]">0</span>
-          <span className="text-[var(--font-green)] webkit-text-stroke">2</span>
-          <span className="text-[var(--font-orange)] webkit-text-stroke">6</span> 김천 김밥 축제
+          <span className="text-(--font-red) webkit-text-stroke">2</span>
+          <span className="text-(--font-yellow) webkit-text-stroke">0</span>
+          <span className="text-(--font-green) webkit-text-stroke">2</span>
+          <span className="text-(--font-orange) webkit-text-stroke">
+            6
+          </span>{" "}
+          김천 김밥 축제
         </h1>
       </header>
 
@@ -57,9 +66,15 @@ export const HomePage = () => {
       </section>
 
       {/* 푸터 (SNS 아이콘 등) */}
-      <footer className="w-full py-4 border-t flex justify-around items-center">
+      <footer className="w-full py-4 border-t border-color:var(--color-foreground) flex justify-around items-center">
         <span className="font-haBold text-sm">김천시 SNS</span>
         {/* 아이콘들이 들어갈 자리 */}
+        <div className="flex gap-4">
+          <BlogIcon />
+          <FacebookIcon />
+          <InstaIcon />
+          <YoutubeIcon />
+        </div>
       </footer>
     </div>
   );

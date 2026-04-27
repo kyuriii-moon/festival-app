@@ -24,17 +24,17 @@
   /* 색상 */
   --color-background: #ffffff;
   --color-foreground: #000000;
-  --font-yellow: #FFE204;
-  --font-red: #FF0909;
-  --font-green: #2BC504;
-  --font-orange: #FFA600;
-  --btn-green: #07D53E;
-  --btn-light-green: #6BE46B;
-  --btn-orange: #FFB061;
-  --btn-blue: #009AFA;
-  --btn-red: #FF0909;
-  --btn-gray: #D9D9D9;
-  --font-gray: #D7D7D7;
+  --font-yellow: #ffe204;
+  --font-red: #ff0909;
+  --font-green: #2bc504;
+  --font-orange: #ffa600;
+  --btn-green: #07d53e;
+  --btn-light-green: #6be46b;
+  --btn-orange: #ffb061;
+  --btn-blue: #009afa;
+  --btn-red: #ff0909;
+  --btn-gray: #d9d9d9;
+  --font-gray: #d7d7d7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,5 +59,9 @@ body {
   }
   .webkit-text-stroke-wh {
     -webkit-text-stroke: 1px #ffffff;
+  }
+  .border-1 {
+    border-bottom-width: 1px;
+    color: var(--color-foreground);
   }
 }
