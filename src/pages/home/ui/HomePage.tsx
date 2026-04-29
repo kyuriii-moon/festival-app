@@ -5,6 +5,7 @@ import {
   InstaIcon,
   YoutubeIcon,
 } from "@/shared/assets";
+import { Button } from "@/shared/ui/Button";
 import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
@@ -27,23 +28,16 @@ export const HomePage = () => {
 
       {/* 버튼 섹션 */}
       <main className="flex flex-col gap-4 mt-10 w-full px-10">
-        <button
-          onClick={() => navigate("/booth")}
-          className="  text-2xl font-haBold py-10 rounded-2xl shadow-lg active:scale-95 transition"
-        >
+        <Button variant="primary" onClick={() => navigate("/booth")}>
           김밥 부스 현황
-        </button>
+        </Button>
 
-        <button
-          onClick={() => navigate("/parking")}
-          className="text-2xl font-haBold py-10 rounded-2xl border-4 border-black shadow-lg active:scale-95 transition"
-        >
+        <Button variant="outline" onClick={() => navigate("/parking")}>
           주차 현황
-        </button>
-
-        <button className="text-gray-700 py-2 px-6 rounded-full w-fit mx-auto mt-4 text-sm font-haBold">
+        </Button>
+        <Button variant="small" onClick={() => navigate("/admin")}>
           운영진 로그인
-        </button>
+        </Button>
       </main>
 
       {/* 캐릭터 및 하단 정보 (이미지는 나중에 src/shared/assets에 넣으세요!) */}
